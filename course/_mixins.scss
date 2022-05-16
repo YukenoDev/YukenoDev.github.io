@@ -1,0 +1,15 @@
+@mixin btn_hover {
+	&:hover {
+		background-image: none;
+		background-color: #1eacc7;
+		transition: 1s all;
+	}
+}
+
+@mixin bloo {
+	background-color: #1fbad6;
+}
+
+@mixin main_color {
+	color: #1eacc7;
+}
