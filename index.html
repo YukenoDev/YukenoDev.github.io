@@ -7,10 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- Bootstrap CSS -->
-	<link href="src/css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="src/css/bootstrap-reboot.min.css">
-	<link rel="stylesheet" href="src/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="src/css/slick.css">
 	<link rel="icon" href="src/img/favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" href="src/css/style.min.css">
 
@@ -18,7 +14,7 @@
 </head>
 
 <body>
-	<section class="promo">
+	<section class="promo" id="up">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -44,7 +40,9 @@
 					<div class="promo__icon"><img src="src/img/messages.png" alt="icon">Ответим
 						на все вопросы</div>
 				</div>
-				<button data-modal="consultation" class="button button_main">заказать кОНСУЛЬТАЦИЮ</button>
+				<button data-modal="consultation" class="button button_main animate__animated animate__bounceIn wow"
+					data-wow-duration="0.5s">заказать
+					кОНСУЛЬТАЦИЮ</button>
 				<div class="promo__link">
 					или
 					<a href="#catalog"> ПЕРЕЙТИ В КАТАЛОГ</a>
@@ -58,21 +56,24 @@
 			<h2 class="benefits__header">НАШИ ПРЕИМУЩЕСТВА</h2>
 			<div class="benefits__wrapper">
 				<div class="benefits__item">
-					<img src="src/img/cup.png" alt="cup">
+					<img src="src/img/cup.png" alt="cup" class="animate__animated animate__bounce animate__infinite wow"
+						data-wow-duration="1.5s">
 					<div class="benefits__name">Делимся опытом</div>
 					<div class="benefits__text">Наши сотрудники всегда готовы поделиться своим опытом,
 						так как сами бегают полумарафоны, переплыли Босфор, готовятся к соревнованиям по триатлону!
 					</div>
 				</div>
 				<div class="benefits__item">
-					<img src="src/img/heart.png" alt="heart">
+					<img src="src/img/heart.png" alt="heart"
+						class="animate__animated animate__heartBeat animate__infinite wow" data-wow-duration="1.5s">
 					<div class="benefits__name">Заботимся о здоровье</div>
 					<div class="benefits__text">Мы работаем для того,
 						чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
 					</div>
 				</div>
 				<div class="benefits__item">
-					<img src="src/img/shoe.png" alt="shoe">
+					<img src="src/img/shoe.png" alt="shoe"
+						class="animate__animated animate__wobble animate__infinite wow" data-wow-duration="1.5s">
 					<div class="benefits__name">Учим бегать</div>
 					<div class="benefits__text">Помогаем с обучением
 						правильной технике бега!
@@ -93,7 +94,8 @@
 				<input name="name" type="text" placeholder="Ваше имя">
 				<input name="phone" placeholder="Ваш телефон">
 				<input name="email" type="email" placeholder="Ваш E-mail">
-				<button class="button button_submit">заказать кОНСУЛЬТАЦИЮ</button>
+				<button class="button button_submit animate__animated animate__bounceIn wow"
+					data-wow-duration="0.5s">заказать кОНСУЛЬТАЦИЮ</button>
 			</form>
 		</div>
 	</section>
@@ -440,7 +442,7 @@
 	<section class="reviews">
 		<div class="container">
 			<h2 class="reviews__header">отзывы клиентов</h2>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__bounceInDown wow" data-wow-duration="1s">
 				<img src="src/img/profile_1.png" alt="profile" class="reviews-item__img">
 				<div class="reviews-item__wrapper">
 					<div class="reviews-item__title">Ирина Иванченко</div>
@@ -452,7 +454,7 @@
 						Спасибо, RunSmart!</div>
 				</div>
 			</div>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__bounceInDown wow" data-wow-duration="1s">
 				<img src="src/img/profile_2.png" alt="profile" class="reviews-item__img">
 				<div class="reviews-item__wrapper">
 					<div class="reviews-item__title">Иван Сёмочкин</div>
@@ -469,7 +471,7 @@
 						С ними подготовился к своему первому полумарафону! Спасибо!!!</div>
 				</div>
 			</div>
-			<div class="reviews-item">
+			<div class="reviews-item animate__animated animate__bounceInDown wow" data-wow-duration="1s">
 				<img src="src/img/profile_3.png" alt="profile" class="reviews-item__img">
 				<div class="reviews-item__wrapper">
 					<div class="reviews-item__title">Юлия Дашкина</div>
@@ -544,15 +546,16 @@
 		</div>
 	</div>
 
-	<a class="pageup" href="#">
+	<a class="pageup" href="#up">
 		<img src="src/img/circle-up-solid.svg" alt="up">
 	</a>
 
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 	<script src="src/js/slick.min.js"></script>
 	<script src="src/js/jquery.validate.min.js"></script>
 	<script src="src/js/jquery.maskedinput.min.js"></script>
+	<script src="src/js/wow.min.js"></script>
 	<script src="src/js/script.js"></script>
 </body>
 

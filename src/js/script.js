@@ -101,4 +101,6 @@ $(document).ready(function () {
 			$('.pageup').fadeOut('fast');
 		}
 	});
+
+	new WOW().init();
 });

@@ -3,6 +3,14 @@
 	padding: 70px 0 95px 0;
 	background-color: #f6f6f6;
 
+	&_animated-2 {
+		animation: heartbeat 1s infinite ease-in-out;
+
+		&:hover {
+			animation-play-state: paused;
+		}
+	}
+
 	&__wrapper {
 		min-width: 920px;
 		display: flex;
