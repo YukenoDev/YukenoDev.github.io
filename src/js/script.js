@@ -44,7 +44,7 @@ $(document).ready(function () {
 			$('#order .modal__descr').text($('.catalog__subheader').eq(i).text());
 			$('.overlay, #order').fadeIn('fast');
 		});
-	})
+	});
 
 	function valideForm(form) {
 		$(form).validate({
@@ -94,13 +94,11 @@ $(document).ready(function () {
 		return false;
 	});
 
-	//scroll
-
 	$(window).scroll(function () {
-		if ($(this), scrollTop() > 1600) {
-			$('.pageup').fadeIn();
+		if ($(this).scrollTop() > 600) {
+			$('.pageup').fadeIn('fast');
 		} else {
-			$('.pageup').fadeOut();
+			$('.pageup').fadeOut('fast');
 		}
 	});
 });
