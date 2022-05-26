@@ -1,1 +1,30 @@
 @import "fonts";
+
+* {
+	font-family: 'Museo Sans Cyrl', sans-serif;
+}
+
+@import "variables";
+
+
+ul {
+	padding-left: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+@import "general";
+@import "promo";
+@import "header";
+@import "button";
+@import "benefits";
+@import "consultation";
+@import "forms";
+@import "carousel";
+@import "catalog";
+@import "reviews";
+@import "footer";
+@import "modal";
+@import "pageup";
+
+@import "media";
